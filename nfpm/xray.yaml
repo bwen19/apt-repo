@@ -1,0 +1,32 @@
+name: "xray"
+arch: "amd64"
+platform: "linux"
+version: "REAL_VERSION"
+section: "default"
+priority: "extra"
+provides:
+  - xray
+depends:
+  - v2ray-rules-dat
+maintainer: "Eruhini"
+description: |
+  Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
+homepage: "https://github.com/XTLS/Xray-core"
+license: "MPL-2.0"
+scripts:
+  postinstall: ./scripts/reload-systemd.sh
+  postremove: ./scripts/reload-systemd.sh
+contents:
+  - src: ./xray-core/xray
+    dst: /usr/bin/xray
+  - src: /usr/share/v2ray-rules-dat/geoip.dat
+    dst: /usr/share/xray/geoip.dat
+    type: symlink
+  - src: /usr/share/v2ray-rules-dat/geosite.dat
+    dst: /usr/share/xray/geosite.dat
+    type: symlink
+  - src: ./config/xray.json
+    dst: /etc/xray/blank.json
+    type: config
+  - src: ./service/xray.service
+    dst: /lib/systemd/system/xray.service

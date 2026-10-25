@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://bwen19.github.io/apt-repo
+Suites: stable
+Components: main
+Signed-By: /usr/share/keyrings/eruhini-archive-stable.gpg

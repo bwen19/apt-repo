@@ -1,0 +1,65 @@
+name: Generate APT Repo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 10 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  Build-Repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Install UPX and nFPM
+        shell: bash
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew install upx
+          brew install jq nfpm
+
+      - name: Download softwares
+        shell: bash
+        run: |
+          for script in $(ls downloader/*.sh); do
+            bash -c "$(cat "$script")"
+          done
+
+      - name: Generate packages
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          for script in $(ls packager/*.sh); do
+            bash -c "$(cat "$script")"
+          done
+
+      - name: Install reprepro gpg
+        run: |
+          sudo apt update
+          sudo apt install -y reprepro gnupg
+
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v7
+        with:
+          gpg_private_key: ${{ secrets.PRIVATE_KEY }}
+          passphrase: ${{ secrets.PRIVATE_KEY_PWD }}
+
+      - name: Create Linux Repo
+        run: |
+          cat create-repo.sh | sed "s/THE_REAL_GPG_PUBLIC_KEY_ID/${{ steps.import_gpg.outputs.keyid }}/g" > /tmp/create-repo-temp.sh
+          bash -c "$(cat /tmp/create-repo-temp.sh)"
+          gpg --export ${{ steps.import_gpg.outputs.keyid }} > repo/eruhini-archive-stable.gpg
+
+      - name: Create main page
+        run: bash -c "$(cat create-page.sh)"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./repo

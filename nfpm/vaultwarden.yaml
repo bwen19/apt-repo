@@ -1,0 +1,27 @@
+name: "vaultwarden"
+arch: "amd64"
+platform: "linux"
+version: "REAL_VERSION"
+section: "default"
+priority: "extra"
+provides:
+  - vaultwarden
+maintainer: "Eruhini"
+description: |
+  Unofficial Bitwarden compatible server written in Rust.
+homepage: "https://github.com/dani-garcia/vaultwarden"
+license: "AGPL-3.0"
+scripts:
+  postinstall: ./scripts/reload-systemd.sh
+  postremove: ./scripts/reload-systemd.sh
+contents:
+  - src: ./vaultwarden/vaultwarden
+    dst: /usr/bin/vaultwarden
+  - src: ./service/vaultwarden.service
+    dst: /lib/systemd/system/vaultwarden.service
+  - src: ./config/vaultwarden.env
+    dst: /etc/vaultwarden/vaultwarden.env
+    type: config
+  - src: ./vaultwarden/web-vault/
+    dst: /var/lib/vaultwarden/web-vault
+    type: tree
