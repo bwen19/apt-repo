@@ -1,0 +1,20 @@
+Origin: Eruhini
+Label: softwares
+Suite: stable
+Codename: stable
+Date: Sun, 25 Oct 2026 09:45:09 UTC
+Architectures: amd64
+Components: main
+Description: APT repository for Eruhini
+MD5Sum:
+ 9f71b98bdcceb153efb8748302a6b85a 1677 main/binary-amd64/Packages
+ 00bf7583c54aa57cb76efc217e87b18a 862 main/binary-amd64/Packages.gz
+ fe59e5e3c75c28314b4d018b06c9da5d 125 main/binary-amd64/Release
+SHA1:
+ 183cb5f433ea0f06827e9df0bfa255b5491d6d54 1677 main/binary-amd64/Packages
+ 46cdbbbd1f34d16a20f2d58bca6cca901f5c19cc 862 main/binary-amd64/Packages.gz
+ c77bad3c985006abdb877d2eb93b1c75531ca185 125 main/binary-amd64/Release
+SHA256:
+ 68be5ec0a91abfb7165af141e89dfefb87d392c23e68e6e593a2f92a6a620770 1677 main/binary-amd64/Packages
+ bdff87ded98ccc21dcfcf6b7b55aa0136504f05f4e0c17c644f057c37c9a2ad6 862 main/binary-amd64/Packages.gz
+ 1fac84b212d12b0ca049f6c733ca30da0d6d751f6ac07fb4dcfefc2e9aaf7eb8 125 main/binary-amd64/Release

@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: Eruhini
+Label: softwares
+Architecture: amd64
+Description: APT repository for Eruhini
