@@ -4,6 +4,11 @@ Documentation=https://github.com/dani-garcia/vaultwarden
 After=network.target
 
 [Service]
+DynamicUser=yes
+UMask=0077
+NoNewPrivileges=true
+StateDirectory=vaultwarden/data
+StateDirectoryMode=0700
 EnvironmentFile=/etc/vaultwarden/vaultwarden.env
 ExecStart=/usr/bin/vaultwarden
 Restart=on-failure
@@ -15,9 +20,8 @@ PrivateTmp=true
 PrivateDevices=true
 ProtectHome=true
 ProtectSystem=strict
-# Only allow writes to the following directory and set it to the working directory (user and password data are stored here)
+# StateDirectory allows writes to the data directory and preserves it on stop.
 WorkingDirectory=/var/lib/vaultwarden
-ReadWritePaths=/var/lib/vaultwarden
 
 [Install]
 WantedBy=multi-user.target

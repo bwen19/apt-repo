@@ -10,7 +10,11 @@ if ! curl -s "https://api.github.com/repos/XTLS/Xray-core/releases/latest" -o "$
     exit 1
 fi
 
-remote_version=$(grep '"tag_name":' "$temp_file" | sed -E 's/.*"([^"]+)".*/\1/')
+remote_version=$(grep tag_name "$temp_file" | awk -F "tag_name" '{printf $2}' | awk -F "," '{printf $1}' | awk -F '"' '{printf $3}')
+if [ -z "$remote_version" ]; then
+    echo "Error: Cannot parse latest version of xray!" >&2
+    exit 1
+fi
 url="https://github.com/XTLS/Xray-core/releases/download/$remote_version/Xray-linux-64.zip"
 
 curl -L "$url" -o "$temp_dir/Xray-linux-64.zip"

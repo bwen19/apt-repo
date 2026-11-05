@@ -26,6 +26,7 @@ jobs:
       - name: Download softwares
         shell: bash
         run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           for script in $(ls downloader/*.sh); do
             bash -c "$(cat "$script")"
           done

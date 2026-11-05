@@ -10,7 +10,11 @@ if ! curl -s "https://api.github.com/repos/dani-garcia/vaultwarden/releases/late
     exit 1
 fi
 
-remote_version=$(grep '"tag_name":' "$temp_file" | sed -E 's/.*"([^"]+)".*/\1/')
+remote_version=$(grep tag_name "$temp_file" | awk -F "tag_name" '{printf $2}' | awk -F "," '{printf $1}' | awk -F '"' '{printf $3}')
+if [ -z "$remote_version" ]; then
+    echo "Error: Cannot parse latest version of vaultwarden!" >&2
+    exit 1
+fi
 
 [ -d "vaultwarden" ] || mkdir "vaultwarden"
 docker pull docker.io/vaultwarden/server:${remote_version}-alpine
