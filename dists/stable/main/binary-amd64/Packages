@@ -1,48 +1,49 @@
 Package: v2ray-rules-dat
-Version: 202610242205.0.0
+Version: 202611062204.0.0
 Architecture: all
 Maintainer: Eruhini
-Installed-Size: 27306
+Installed-Size: 27244
 Homepage: https://github.com/Loyalsoldier/v2ray-rules-dat
 Priority: extra
 Section: default
-Filename: pool/main/v/v2ray-rules-dat/v2ray-rules-dat_202610242205.0.0_all.deb
-Size: 7346518
-SHA256: a40a0e894be03448886bd0ca1999a339a5d5f6d284debecd793737351c2cdc64
-SHA1: 189015d54907919856a94ed2443bec564a54246c
-MD5sum: 870ae3989e6fba379e5a22f787355a7e
+Filename: pool/main/v/v2ray-rules-dat/v2ray-rules-dat_202611062204.0.0_all.deb
+Size: 7318560
+SHA256: 21d4c84f80a5b4d48f5765c80597d01e788b3f20e009c9bae41c29512c3d340a
+SHA1: 1e9d6441619650497cc66ab24f250a27dfbf3403
+MD5sum: c5210fdd1d09a5c6dc3dbd7ed914e31a
 Description: Enhanced edition of V2Ray rules dat files, applicable to V2Ray, Xray-core, mihomo(Clash-Meta), hysteria, Trojan-Go and leaf.
 
 Package: vaultwarden
-Version: 1.37.4
+Version: 1.37.5-1
 Architecture: amd64
 Maintainer: Eruhini
-Installed-Size: 196565
+Installed-Size: 215423
 Provides: vaultwarden
+Depends: init-system-helpers
 Homepage: https://github.com/dani-garcia/vaultwarden
 Priority: extra
 Section: default
-Filename: pool/main/v/vaultwarden/vaultwarden_1.37.4_amd64.deb
-Size: 53013126
-SHA256: e729d33b324240291aa9df74340d21d7986987df9502b180f0c4999df9055b1b
-SHA1: b0dd0c8d659905c3c896877536cc0d1ec2c47a6d
-MD5sum: e26411810e8919a3e014d7991bd5ae03
+Filename: pool/main/v/vaultwarden/vaultwarden_1.37.5-1_amd64.deb
+Size: 58328336
+SHA256: b9e8cd0d85d34295e098ebcbefc9642e7e8ff45029a14de58386a61696b0c040
+SHA1: 249962d4daa2032d2a65270a6fc0e84b7dbef40f
+MD5sum: 59b40fc853e04c70a7e12d00a1735d1e
 Description: Unofficial Bitwarden compatible server written in Rust.
 
 Package: xray
-Version: 26.10.21
+Version: 26.10.31-1
 Architecture: amd64
 Maintainer: Eruhini
-Installed-Size: 9760
+Installed-Size: 9790
 Provides: xray
-Depends: v2ray-rules-dat
+Depends: v2ray-rules-dat, init-system-helpers
 Homepage: https://github.com/XTLS/Xray-core
 Priority: extra
 Section: default
-Filename: pool/main/x/xray/xray_26.10.21_amd64.deb
-Size: 9996918
-SHA256: 6876d76d866168c59e40fa9b6f2ff52325cb1e07d565926a881156d8b4dc98d9
-SHA1: 00fa7991769f5600fdb7800f06e6c9e4ed39ae1d
-MD5sum: 2e5beb921cb907fa54fdf57c9eb25fd9
+Filename: pool/main/x/xray/xray_26.10.31-1_amd64.deb
+Size: 10028750
+SHA256: 2f9f8b8d3027745c8caa904f86f620596fd6ee1634e8c9e28c96735f71377e6a
+SHA1: 511dba1327904adb7300ed0420f026f6fc9d4850
+MD5sum: 15507be254e5a4274d1f600b4a07198b
 Description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 
