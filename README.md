@@ -30,3 +30,18 @@ sudo apt update
 sudo apt install xray
 sudo apt install vaultwarden
 ```
+
+### 5. Configure and start services
+
+Edit `/etc/xray/config.json` with your Xray configuration; the installed file is an empty template. Then validate and start it:
+
+```shell
+sudo xray run -test -config /etc/xray/config.json
+sudo systemctl enable --now xray
+```
+
+Vaultwarden settings are in `/etc/vaultwarden/vaultwarden.env` (default port: `8080`):
+
+```shell
+sudo systemctl enable --now vaultwarden
+```
