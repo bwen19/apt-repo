@@ -1,16 +1,16 @@
 Package: v2ray-rules-dat
-Version: 202611062204.0.0
+Version: 202611102204.0.0
 Architecture: all
 Maintainer: Eruhini
-Installed-Size: 27244
+Installed-Size: 27205
 Homepage: https://github.com/Loyalsoldier/v2ray-rules-dat
 Priority: extra
 Section: default
-Filename: pool/main/v/v2ray-rules-dat/v2ray-rules-dat_202611062204.0.0_all.deb
-Size: 7318560
-SHA256: 21d4c84f80a5b4d48f5765c80597d01e788b3f20e009c9bae41c29512c3d340a
-SHA1: 1e9d6441619650497cc66ab24f250a27dfbf3403
-MD5sum: c5210fdd1d09a5c6dc3dbd7ed914e31a
+Filename: pool/main/v/v2ray-rules-dat/v2ray-rules-dat_202611102204.0.0_all.deb
+Size: 7297286
+SHA256: 73ec451c4d9ad86657ddd8c73398cd776e8cbe837fc370d8fa8e585945d080b8
+SHA1: 68a2dbbb0b6d945287c87f7bc5e22a78903d51c1
+MD5sum: a4cb52ae3edde823df2f69bffb1698ca
 Description: Enhanced edition of V2Ray rules dat files, applicable to V2Ray, Xray-core, mihomo(Clash-Meta), hysteria, Trojan-Go and leaf.
 
 Package: vaultwarden
@@ -31,19 +31,19 @@ MD5sum: 59b40fc853e04c70a7e12d00a1735d1e
 Description: Unofficial Bitwarden compatible server written in Rust.
 
 Package: xray
-Version: 26.10.31-1
+Version: 26.11.9
 Architecture: amd64
 Maintainer: Eruhini
-Installed-Size: 9790
+Installed-Size: 34604
 Provides: xray
 Depends: v2ray-rules-dat, init-system-helpers
 Homepage: https://github.com/XTLS/Xray-core
 Priority: extra
 Section: default
-Filename: pool/main/x/xray/xray_26.10.31-1_amd64.deb
-Size: 10028750
-SHA256: 2f9f8b8d3027745c8caa904f86f620596fd6ee1634e8c9e28c96735f71377e6a
-SHA1: 511dba1327904adb7300ed0420f026f6fc9d4850
-MD5sum: 15507be254e5a4274d1f600b4a07198b
+Filename: pool/main/x/xray/xray_26.11.9_amd64.deb
+Size: 13879860
+SHA256: 1586dbb92097bfd5fe03fc64fef7505504c6b4798d5ad1f214a0e9df2f5d2399
+SHA1: 3e62ecd46ad7042d285209df5d48b8bd9645a5f7
+MD5sum: 3ffb463957501c53d6ebc4ef0b34f96f
 Description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 

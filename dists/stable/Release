@@ -2,19 +2,19 @@ Origin: Eruhini
 Label: softwares
 Suite: stable
 Codename: stable
-Date: Sat, 07 Nov 2026 05:49:01 UTC
+Date: Tue, 10 Nov 2026 23:56:27 UTC
 Architectures: amd64
 Components: main
 Description: APT repository for Eruhini
 MD5Sum:
- b39330e69793eceda1f55b7115554ca8 1736 main/binary-amd64/Packages
- 35da4690b8d504d181a37646b664c7b2 881 main/binary-amd64/Packages.gz
+ 8b8bf19cdd27cd757dd03504dc5b2d62 1731 main/binary-amd64/Packages
+ 6c7be4236cab685172339b4d94ee4cf9 878 main/binary-amd64/Packages.gz
  fe59e5e3c75c28314b4d018b06c9da5d 125 main/binary-amd64/Release
 SHA1:
- c4122c1c26baae9d76d2914926966fa3e8c181c4 1736 main/binary-amd64/Packages
- b2d694da04c1691fabfda3eea824858ecb7d1c3b 881 main/binary-amd64/Packages.gz
+ 2f5b4b76768d00f6df51c4b8e5c6f8aa418afd01 1731 main/binary-amd64/Packages
+ d9eb10ccef3b553edd3e1e5f05c5a7b20e7e894c 878 main/binary-amd64/Packages.gz
  c77bad3c985006abdb877d2eb93b1c75531ca185 125 main/binary-amd64/Release
 SHA256:
- de86c52d35dfe8b74788219af16560155f7beaec68e2267c9ac22e91094e80a7 1736 main/binary-amd64/Packages
- fe61a4e1cebd006415810a38557957bef8b11056aff1745c71e54195597d0f3f 881 main/binary-amd64/Packages.gz
+ 527797f3717b0ce8fa1fa3310771838d9777a1981ad8ebff9e526a43454d8d29 1731 main/binary-amd64/Packages
+ 6759cf68830ba9982fdcd8b77230bcb8422c2101de447e9225d260c1f95e1eb0 878 main/binary-amd64/Packages.gz
  1fac84b212d12b0ca049f6c733ca30da0d6d751f6ac07fb4dcfefc2e9aaf7eb8 125 main/binary-amd64/Release
