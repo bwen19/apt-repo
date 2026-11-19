@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: Eruhini
+Label: softwares
+Architecture: amd64
+Description: A Debian repository for xray and vaultwarden.

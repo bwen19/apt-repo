@@ -1,0 +1,34 @@
+Package: vaultwarden
+Version: 1.37.5
+Architecture: amd64
+Maintainer: Eruhini
+Installed-Size: 215423
+Provides: vaultwarden
+Depends: init-system-helpers
+Homepage: https://github.com/dani-garcia/vaultwarden
+Priority: extra
+Section: default
+Filename: pool/main/v/vaultwarden/vaultwarden_1.37.5_amd64.deb
+Size: 58328134
+SHA256: c9fc88714b44acc2dda6d56ea38ca0d5f3008f8f52823d779d55a0c9a69cd625
+SHA1: 04a4157953333a5128c34a6d25d4403d4c963331
+MD5sum: e9897e845bb0a64f41e96a7d4a109be0
+Description: Unofficial Bitwarden compatible server written in Rust.
+
+Package: xray
+Version: 26.11.9
+Architecture: amd64
+Maintainer: Eruhini
+Installed-Size: 45065
+Provides: xray
+Depends: init-system-helpers
+Homepage: https://github.com/XTLS/Xray-core
+Priority: extra
+Section: default
+Filename: pool/main/x/xray/xray_26.11.9_amd64.deb
+Size: 16948680
+SHA256: 2ea4dc4ca2440b208f625ac0dd0d3e4df7987afbcfc523c7e4060f54cf4f466c
+SHA1: d556e857f3252638243670cea806c961808d8d38
+MD5sum: 9274615cc453593dc8b74df4018b7731
+Description: Xray, Penetrates Everything. An open platform for various uses.
+

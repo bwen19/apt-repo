@@ -1,0 +1,8 @@
+Origin: Eruhini
+Label: softwares
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Description: A Debian repository for xray and vaultwarden.
+SignWith: 31AB9B8D5C6040B8
