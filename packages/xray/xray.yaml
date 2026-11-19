@@ -1,0 +1,31 @@
+name: "xray"
+arch: "amd64"
+platform: "linux"
+version: "REAL_VERSION"
+section: "default"
+priority: "extra"
+provides:
+  - xray
+depends:
+  - init-system-helpers
+maintainer: "Eruhini"
+description: |
+  Xray, Penetrates Everything. An open platform for various uses.
+homepage: "https://github.com/XTLS/Xray-core"
+license: "MPL-2.0"
+scripts:
+  postinstall: ./packages/xray/xray.postinst.sh
+  preremove: ./packages/xray/xray.prerm.sh
+  postremove: ./packages/xray/xray.postrm.sh
+contents:
+  - src: ./xray/xray
+    dst: /usr/bin/xray
+  - src: ./xray/geoip.dat
+    dst: /usr/share/xray/geoip.dat
+  - src: ./xray/geosite.dat
+    dst: /usr/share/xray/geosite.dat
+  - src: ./packages/xray/xray.service
+    dst: /lib/systemd/system/xray.service
+  - src: ./packages/xray/xray.json
+    dst: /etc/xray/config.json
+    type: config|noreplace
