@@ -24,8 +24,9 @@ for deb_file in ./archive/*.deb; do
     reprepro -b repo includedeb stable "$deb_file"
 done
 
-[ -f repo/eruhini.sources ] || cp eruhini.sources ./repo
-[ -f repo/.nojekyll ] || cp .nojekyll ./repo
+cp README.md ./repo
+cp eruhini.sources ./repo
+cp .nojekyll ./repo
 
 # Update html
 XRAY_VERSION=$(reprepro -b repo --list-format '${version}\n' list stable xray)

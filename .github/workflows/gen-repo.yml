@@ -60,7 +60,7 @@ jobs:
         run: |
           cat create-repo.sh | sed "s/THE_REAL_GPG_PUBLIC_KEY_ID/${{ steps.import_gpg.outputs.keyid }}/g" > /tmp/create-repo-temp.sh
           bash -c "$(cat /tmp/create-repo-temp.sh)"
-          [ -f repo/eruhini-archive-stable.gpg ] || gpg --export ${{ steps.import_gpg.outputs.keyid }} > repo/eruhini-archive-stable.gpg
+          gpg --export ${{ steps.import_gpg.outputs.keyid }} > repo/eruhini-archive-stable.gpg
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

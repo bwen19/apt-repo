@@ -7,8 +7,8 @@ case "$1" in
             adduser --system --group --no-create-home --home /var/lib/vaultwarden vaultwarden
         fi
 
-        mkdir -p /var/lib/vaultwarden
-        chown vaultwarden:vaultwarden /var/lib/vaultwarden
+        mkdir -p /var/lib/vaultwarden/data
+        chown -R vaultwarden:vaultwarden /var/lib/vaultwarden
 
         if deb-systemd-helper --quiet was-enabled 'vaultwarden.service'; then
             deb-systemd-helper enable 'vaultwarden.service' >/dev/null || true
