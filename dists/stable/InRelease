@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Eruhini
+Label: softwares
+Suite: stable
+Codename: stable
+Date: Thu, 19 Nov 2026 09:15:32 UTC
+Architectures: amd64
+Components: main
+Description: A Debian repository for xray and vaultwarden.
+MD5Sum:
+ 879bbcd7dc0be8ad746610dbac7bce37 1064 main/binary-amd64/Packages
+ ccb40fa1e61a10cf7cc1bbc74feaa4a3 594 main/binary-amd64/Packages.gz
+ b3b62039cdfd0937d53b44217dbdcbc6 144 main/binary-amd64/Release
+SHA1:
+ 91e8c95edd9cdd0fb5bf6b42c1b0ab3ef2613d24 1064 main/binary-amd64/Packages
+ 3f392b6f9c64d109730caef1278211d5c42ba913 594 main/binary-amd64/Packages.gz
+ 60432581daca65e3ae40a600b196c0dc0ef5dbb4 144 main/binary-amd64/Release
+SHA256:
+ a9de69402d75be708db0390ba6a3729de0747585b27274fb0424c2c97ca5e18b 1064 main/binary-amd64/Packages
+ 767dcf0a2f4bb8e86b57f70249ee4af8689524136825666caf9a4cad54202046 594 main/binary-amd64/Packages.gz
+ 342445e35b7e6b89f927e186c476b7eb54fb4602f43de518e1edd661d6c06f5d 144 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE7YVpj/aKjVJzZ5ZTMaubjVxgQLgFAmr+vjUACgkQMaubjVxg
+QLgnYwv+K8vHPAR9WVmH8NExjykoN6FK6CwgIDiTb7y1DzX9vWkPu0U19PH7dFWR
+dyN0q0UHGlS5ODvjzW0FWhMAitQ4bmPbszMly53Uiw2BmL2r9RYVAhC/DTsk8e/F
+aIjeVReue1zTu9ZE93JlDmAD+yDkpclokIgzeviP6sigCw6CADCB7yIbdFtCyTIf
+K1GDimi63Z7Y4A3qBAZFHRqBySUrZNDK91B6gj43WRdk9HFZYTituIwKkoz9lMLa
+iSwIo63phCQmnP/WpxZ0fdDDmvU5XkexmTt20HE1RLF1vh6esTuO44GCtF7ePlRs
+cci8uIBTy2aYdB6uw8AI6urvt7ACFnoqnKqWsp+zKKzftk/HZqNQC3km0z9xiJJ/
+I8GDx8iprHhNJq4uOkoK2CviWuYJrB3331/az+fFkLtZRIq1Phqxsft/0pP7FT/U
+33tIg3rEd9sPOkeyvVQH06fgkaLgR3khVEmQW2wYmNpZnxPksbZafw2AmK/bSxY1
+f2fV3fIO
+=2Eom
+-----END PGP SIGNATURE-----
